@@ -81,7 +81,6 @@ voice_assistant:
   noise_suppression_level: 2
   auto_gain: 31dBFS
   volume_multiplier: 2.0
-  vad_threshold: 3
   on_listening:
     - light.turn_on:
         id: led
@@ -218,7 +217,6 @@ light:
     chipset: SK6812
     num_leds: 1
     rgb_order: grb
-    rmt_channel: 0
     effects:
       - pulse:
           name: "Slow Pulse"
